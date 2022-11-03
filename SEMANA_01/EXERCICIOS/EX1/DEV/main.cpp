@@ -56,6 +56,8 @@ int insereVetor(int valor, int valorMax, int ultimaPosicao, int arr[])
     return ultimaPosicao + 1;
 }
 
+
+
 /*
 4 - Faça duas funções que recebem um vetor com 4 posições que contém o valor da distância de um pequeno robô até cada um dos seus 4 lados.
 A primeira função deve retornar a direção de maior distância ("Direita", "Esquerda", "Frente", "Tras") e a segunda função deve retornar esta maior distância.
