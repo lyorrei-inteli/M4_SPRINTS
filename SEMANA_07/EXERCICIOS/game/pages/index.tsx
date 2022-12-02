@@ -25,14 +25,14 @@ const Home = () => {
             setIsRunning(false)
 
             if (playerOneCount > playerTwoCount) {
-                axios.get('http://10.10.0.2:80/playerone')
+                axios.get('http://10.10.0.2:80/playerone').catch(err => console.log(err))
             } else if (playerOneCount < playerTwoCount) {
-                axios.get('http://10.10.0.2:80/playertwo')
+                axios.get('http://10.10.0.2:80/playertwo').catch(err => console.log(err))
             } else {
                 alert('Empate!')
             }
         }
-    }, [timer, isRunning, playerOneCount, playerTwoCount])
+    }, [timer, isRunning])
 
     const startGame = () => {
         setPlayerOneCount(0)
