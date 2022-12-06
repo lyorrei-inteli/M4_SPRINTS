@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-#define BLUE_LED 32
-#define RED_LED 33
+#define BLUE_LED 21
+#define RED_LED 5
 
 const char* ssid = "ESP32";  // Enter SSID here
 const char* password = "12345678";  //Enter Password here
